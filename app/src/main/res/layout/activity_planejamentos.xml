@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#FFFFFF"
     tools:context=".PlanejamentosActivity">
 
@@ -16,9 +17,7 @@
         android:paddingBottom="1dp">
 
         <TableRow
-            android:id="@+id/lista_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:id="@+id/lista_1">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -72,9 +71,7 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/lista_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:id="@+id/lista_2">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -143,9 +140,7 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/lista_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:id="@+id/lista_3">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -214,9 +209,7 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/lista_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:id="@+id/lista_4">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -285,9 +278,7 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/lista_5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:id="@+id/lista_5">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -356,5 +347,13 @@
         </TableRow>
 
     </TableLayout>
+
+    <Button
+        android:id="@+id/btn_novo_planejamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/novo_planejamento"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp" />
 
 </LinearLayout>
