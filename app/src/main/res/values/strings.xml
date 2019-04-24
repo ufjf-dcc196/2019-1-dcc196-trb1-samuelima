@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">trb1</string>
+    <string name="ano">Ano</string>
+    <string name="semestre">Semestre</string>
+    <string name="hrs_planej">% Hrs Planej.</string>
+    <string name="total_hrs">Total Horas</string>
+    <string name="parcial">% Parcial</string>
+</resources>
