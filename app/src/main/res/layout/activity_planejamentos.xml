@@ -17,7 +17,7 @@
         android:paddingBottom="1dp">
 
         <TableRow
-            android:id="@+id/lista_1">
+            android:id="@+id/lista_head">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -26,17 +26,7 @@
                 android:gravity="center"
                 android:paddingTop="2dp"
                 android:paddingBottom="2dp"
-                android:text="@string/ano"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:paddingTop="2dp"
-                android:paddingBottom="2dp"
-                android:text="@string/semestre"
+                android:text="@string/ano_semestre"
                 android:textStyle="bold" />
 
             <TextView
@@ -68,10 +58,34 @@
                 android:paddingBottom="2dp"
                 android:text="@string/parcial"
                 android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="@string/editar"
+                android:textStyle="bold" />
         </TableRow>
 
         <TableRow
-            android:id="@+id/lista_2">
+            android:id="@+id/lista_1">
+
+            <TextView
+                android:id="@+id/pdc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingLeft="1dp"
+                android:paddingTop="3dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="3dp"
+                android:text="2019-1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -81,35 +95,9 @@
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:paddingLeft="1dp"
-                android:paddingTop="2dp"
+                android:paddingTop="3dp"
                 android:paddingRight="1dp"
-                android:paddingBottom="2dp"
-                android:text="2019" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:gravity="center"
-                android:paddingLeft="1dp"
-                android:paddingTop="2dp"
-                android:paddingRight="1dp"
-                android:paddingBottom="2dp"
-                android:text="1º" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:gravity="center"
-                android:paddingLeft="1dp"
-                android:paddingTop="2dp"
-                android:paddingRight="1dp"
-                android:paddingBottom="2dp"
+                android:paddingBottom="3dp"
                 android:text="25%" />
 
             <TextView
@@ -120,9 +108,9 @@
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:paddingLeft="1dp"
-                android:paddingTop="2dp"
+                android:paddingTop="3dp"
                 android:paddingRight="1dp"
-                android:paddingBottom="2dp"
+                android:paddingBottom="3dp"
                 android:text="10" />
 
             <TextView
@@ -133,16 +121,102 @@
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:paddingLeft="1dp"
-                android:paddingTop="2dp"
+                android:paddingTop="3dp"
                 android:paddingRight="1dp"
-                android:paddingBottom="2dp"
+                android:paddingBottom="3dp"
                 android:text="16,66%" />
+
+            <TextView
+                android:id="@+id/edit_ls_1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingLeft="1dp"
+                android:paddingTop="3dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="3dp"
+                android:text="@string/editar" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/lista_2">
+
+            <TextView
+                android:id="@+id/pdc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingLeft="1dp"
+                android:paddingTop="3dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="3dp"
+                android:text="2019-2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingLeft="1dp"
+                android:paddingTop="3dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="3dp"
+                android:text="25%" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingLeft="1dp"
+                android:paddingTop="3dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="3dp"
+                android:text="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingLeft="1dp"
+                android:paddingTop="3dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="3dp"
+                android:text="0%" />
+
+            <TextView
+                android:id="@+id/edit_ls_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingLeft="1dp"
+                android:paddingTop="3dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="3dp"
+                android:text="@string/editar" />
         </TableRow>
 
         <TableRow
             android:id="@+id/lista_3">
 
             <TextView
+                android:id="@+id/pdc3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -150,10 +224,10 @@
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:paddingLeft="1dp"
-                android:paddingTop="2dp"
+                android:paddingTop="3dp"
                 android:paddingRight="1dp"
-                android:paddingBottom="2dp"
-                android:text="2019" />
+                android:paddingBottom="3dp"
+                android:text="2020-1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -163,22 +237,9 @@
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:paddingLeft="1dp"
-                android:paddingTop="2dp"
+                android:paddingTop="3dp"
                 android:paddingRight="1dp"
-                android:paddingBottom="2dp"
-                android:text="2º" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:gravity="center"
-                android:paddingLeft="1dp"
-                android:paddingTop="2dp"
-                android:paddingRight="1dp"
-                android:paddingBottom="2dp"
+                android:paddingBottom="3dp"
                 android:text="25%" />
 
             <TextView
@@ -189,9 +250,9 @@
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:paddingLeft="1dp"
-                android:paddingTop="2dp"
+                android:paddingTop="3dp"
                 android:paddingRight="1dp"
-                android:paddingBottom="2dp"
+                android:paddingBottom="3dp"
                 android:text="0" />
 
             <TextView
@@ -202,16 +263,31 @@
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:paddingLeft="1dp"
-                android:paddingTop="2dp"
+                android:paddingTop="3dp"
                 android:paddingRight="1dp"
-                android:paddingBottom="2dp"
+                android:paddingBottom="3dp"
                 android:text="0%" />
+
+            <TextView
+                android:id="@+id/edit_ls_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingLeft="1dp"
+                android:paddingTop="3dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="3dp"
+                android:text="@string/editar" />
         </TableRow>
 
         <TableRow
             android:id="@+id/lista_4">
 
             <TextView
+                android:id="@+id/pdc4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -219,10 +295,10 @@
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:paddingLeft="1dp"
-                android:paddingTop="2dp"
+                android:paddingTop="3dp"
                 android:paddingRight="1dp"
-                android:paddingBottom="2dp"
-                android:text="2020" />
+                android:paddingBottom="3dp"
+                android:text="2020-2" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -232,22 +308,9 @@
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:paddingLeft="1dp"
-                android:paddingTop="2dp"
+                android:paddingTop="3dp"
                 android:paddingRight="1dp"
-                android:paddingBottom="2dp"
-                android:text="1º" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:gravity="center"
-                android:paddingLeft="1dp"
-                android:paddingTop="2dp"
-                android:paddingRight="1dp"
-                android:paddingBottom="2dp"
+                android:paddingBottom="3dp"
                 android:text="25%" />
 
             <TextView
@@ -258,9 +321,9 @@
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:paddingLeft="1dp"
-                android:paddingTop="2dp"
+                android:paddingTop="3dp"
                 android:paddingRight="1dp"
-                android:paddingBottom="2dp"
+                android:paddingBottom="3dp"
                 android:text="0" />
 
             <TextView
@@ -271,16 +334,13 @@
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:paddingLeft="1dp"
-                android:paddingTop="2dp"
+                android:paddingTop="3dp"
                 android:paddingRight="1dp"
-                android:paddingBottom="2dp"
+                android:paddingBottom="3dp"
                 android:text="0%" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/lista_5">
 
             <TextView
+                android:id="@+id/edit_ls_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
@@ -288,62 +348,10 @@
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:paddingLeft="1dp"
-                android:paddingTop="2dp"
+                android:paddingTop="3dp"
                 android:paddingRight="1dp"
-                android:paddingBottom="2dp"
-                android:text="2020" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:gravity="center"
-                android:paddingLeft="1dp"
-                android:paddingTop="2dp"
-                android:paddingRight="1dp"
-                android:paddingBottom="2dp"
-                android:text="2º" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:gravity="center"
-                android:paddingLeft="1dp"
-                android:paddingTop="2dp"
-                android:paddingRight="1dp"
-                android:paddingBottom="2dp"
-                android:text="25%" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:gravity="center"
-                android:paddingLeft="1dp"
-                android:paddingTop="2dp"
-                android:paddingRight="1dp"
-                android:paddingBottom="2dp"
-                android:text="0" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:gravity="center"
-                android:paddingLeft="1dp"
-                android:paddingTop="2dp"
-                android:paddingRight="1dp"
-                android:paddingBottom="2dp"
-                android:text="0%" />
+                android:paddingBottom="3dp"
+                android:text="@string/editar" />
         </TableRow>
 
     </TableLayout>
