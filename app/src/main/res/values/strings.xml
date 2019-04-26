@@ -11,4 +11,8 @@
     <string name="salvar">Salvar</string>
     <string name="voltar">Voltar</string>
     <string name="nova_disciplina">Nova</string>
+    <string name="disciplina">Disciplina</string>
+    <string name="horas">Horas</string>
+    <string name="area">Área</string>
+    <string name="new_hora_plan">% Horas Planejadas</string>
 </resources>

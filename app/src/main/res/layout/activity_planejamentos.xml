@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,11 +13,14 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:layout_marginVertical="10dp"
+        android:layout_marginTop="10dp"
         android:background="#f1f1f1"
-        android:paddingBottom="1dp">
+        android:paddingBottom="1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp">
 
-        <TableRow
-            android:id="@+id/lista_head">
+        <TableRow android:id="@+id/lista_head">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -70,8 +73,8 @@
                 android:textStyle="bold" />
         </TableRow>
 
-        <TableRow
-            android:id="@+id/lista_1">
+        <!--LINHA 1-->
+        <TableRow android:id="@+id/lista_1">
 
             <TextView
                 android:id="@+id/pdc1"
@@ -141,8 +144,8 @@
                 android:text="@string/editar" />
         </TableRow>
 
-        <TableRow
-            android:id="@+id/lista_2">
+        <!--LINHA 2-->
+        <TableRow android:id="@+id/lista_2">
 
             <TextView
                 android:id="@+id/pdc2"
@@ -212,8 +215,8 @@
                 android:text="@string/editar" />
         </TableRow>
 
-        <TableRow
-            android:id="@+id/lista_3">
+        <!--LINHA 3-->
+        <TableRow android:id="@+id/lista_3">
 
             <TextView
                 android:id="@+id/pdc3"
@@ -283,8 +286,8 @@
                 android:text="@string/editar" />
         </TableRow>
 
-        <TableRow
-            android:id="@+id/lista_4">
+        <!--LINHA 4-->
+        <TableRow android:id="@+id/lista_4">
 
             <TextView
                 android:id="@+id/pdc4"
@@ -360,8 +363,14 @@
         android:id="@+id/btn_novo_planejamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/novo_planejamento"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
