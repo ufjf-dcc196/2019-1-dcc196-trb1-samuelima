@@ -11,6 +11,7 @@ import android.widget.Toast;
 public class DetalhesPlanejamentoActivity extends AppCompatActivity {
     private Button salva_disc;
     private TextView txt_disc, txt_hrs, txt_area;
+    private String id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +23,11 @@ public class DetalhesPlanejamentoActivity extends AppCompatActivity {
         txt_hrs = findViewById(R.id.txt_hr);
         txt_area = findViewById(R.id.txt_area);
 
+
         String dsc = getIntent().getExtras().getString("disciplina");
         String hrs = getIntent().getExtras().getString("horas");
         String are = getIntent().getExtras().getString("area");
+        id = getIntent().getExtras().getString("id");
 
         txt_disc.setText(dsc);
         txt_hrs.setText(hrs);
@@ -35,13 +38,17 @@ public class DetalhesPlanejamentoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent dp = new Intent();
+
+                dp.putExtra("new_id",id);
                 dp.putExtra("new_disciplina",txt_disc.getText().toString());
                 dp.putExtra("new_horas",txt_hrs.getText().toString());
                 dp.putExtra("new_areas",txt_area.getText().toString());
+
                 setResult(DisciplinasCursadasActivity.RESULT_OK, dp);
                 finish();
             }
         });
+
 
     }
 }
