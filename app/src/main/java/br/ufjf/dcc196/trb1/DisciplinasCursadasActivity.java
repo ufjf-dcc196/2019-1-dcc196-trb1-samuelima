@@ -12,8 +12,9 @@ import android.widget.Toast;
 
 public class DisciplinasCursadasActivity extends AppCompatActivity implements OnClickListener{
     public static final int REQ_EDIT_DISC = 1;
+    public static final int REQ_NOVA_DISC = 2;
     private Button b2;
-    private TextView editar, dc_1, dc_2, dc_3, dc_4, d,h,a, d1,h1,a1, d2,h2,a2, d3,h3,a3, d4,h4,a4;
+    private TextView editar, novad, dc_1, dc_2, dc_3, dc_4, d,h,a, d1,h1,a1, d2,h2,a2, d3,h3,a3, d4,h4,a4;
     private String id_ret;
 
 
@@ -31,7 +32,7 @@ public class DisciplinasCursadasActivity extends AppCompatActivity implements On
         dc_4 = findViewById(R.id.list_dc4);
         b2 = findViewById(R.id.btn_volt_plan);
 
-        editar = findViewById(R.id.btn_edit_disc);
+        novad = findViewById(R.id.btn_nova_disc);
 
         /*BOTÃO VOLTAR*/
         b2.setOnClickListener(new OnClickListener() {
@@ -49,19 +50,22 @@ public class DisciplinasCursadasActivity extends AppCompatActivity implements On
         dc_3.setOnClickListener(this);
         dc_4.setOnClickListener(this);
 
-        /*BOTÃO EDITAR*/
-        editar.setOnClickListener(new OnClickListener() {
+        /*BOTÃO NOVA*/
+        novad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent ed = new Intent(DisciplinasCursadasActivity.this, DetalhesPlanejamentoActivity.class);
-                startActivityForResult(ed, REQ_EDIT_DISC);
+                Intent i = new Intent(DisciplinasCursadasActivity.this, NovaDisciplinaCursadaActivity.class);
+                startActivityForResult(i, REQ_NOVA_DISC);
             }
         });
     }
 
-    /*RETORNO DA TELA - NOVO PLANEJAMENTO*/
+    /*RETORNO DA TELA DE EDITAR DISCIPLINA*/
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if(requestCode == REQ_NOVA_DISC && resultCode==RESULT_OK){
+            Toast.makeText(this, "Disciplina Cadastrada!", Toast.LENGTH_SHORT).show();
+        }
         if(requestCode == REQ_EDIT_DISC && resultCode==RESULT_OK){
             if(data!=null){
                 Bundle bn = data.getExtras();
